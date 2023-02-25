@@ -15,6 +15,11 @@ app.post('/api', (req, res) => {
     res.send(req.body);
 });
 
+app.get('/', (req, res) =>{
+    res.status(200);
+    res.send("Hello World");
+});
+
 app.listen(port, () => {
     console.log(`Node Mirror listening on port ${port}`);
 });
